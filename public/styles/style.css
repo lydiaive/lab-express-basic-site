@@ -35,6 +35,9 @@ nav a {
     all: unset;
     cursor: pointer;
 }
+a:hover {
+    text-decoration: underline #efc389 5px;
+  }
 
 main {
     padding: 40px 300px;

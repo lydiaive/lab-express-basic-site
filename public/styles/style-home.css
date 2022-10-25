@@ -8,7 +8,10 @@
 
 body {
     font-family: myFirstFont;
-    margin: 0
+    margin: 0;
+    background-image: url(/images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -35,6 +38,10 @@ nav a {
     all: unset;
     cursor: pointer;
 }
+a:hover {
+  text-decoration: underline #efc389 5px;
+}
+
 main {
     padding: 20px;
 }
@@ -77,20 +84,19 @@ h1, h2 {
     position: relative;
   }
   .div-colored {
-    background-color: #efc389;;
+    background-color: rgb(239,195,137, 0.6);
     height: 87vh;
     width: 28.5vw;
   }
   .div-background {
-    background-image: url(/images/main.jpg);
-    background-position: center 100%;
+
     height: 87vh;
     width: 68.5vw;
   }
   .h1-home {
     position:absolute;
     top: 50%;
-    right:20%;
+    right:40%;
     color: black;
     font-size: 3.5rem;
   }
