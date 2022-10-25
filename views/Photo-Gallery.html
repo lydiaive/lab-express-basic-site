@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Photo Gallery</title>
 </head>
 <body>
-    <header>
-        <h1>This is the Photo Gallery</h1>
-    </header>
+    <nav>
+        <div>
+            <a href="/"> <img src="/images/surf-icon.webp" width="50px"></a>        
+        </div>
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/photo-gallery">Photo Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>photo.gallery</h1>
+    </main>
+    <section class="container">
+        <div id="gallery">
+            <figure class="gallery__item gallery__item--1">
+              <img src="images/family-foto.jpeg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+              <img src="/images/surf-1.jpeg" class="gallery__img" alt="Image 2">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+              <img src="/images/surf-4.webp" class="gallery__img" alt="Image 3">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+              <img src="/images/competition-1.jpeg" class="gallery__img" alt="Image 4">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+              <img src="/images/surf-2.jpeg" class="gallery__img" alt="Image 5">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+              <img src="/images/surf-3.jpeg" class="gallery__img" alt="Image 6">
+            </figure>
+          </div>
+    </section>
 </body>
 </html>

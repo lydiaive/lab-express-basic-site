@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/fonts/VarelaRound-Regular.ttf)
+  }
+
+  /* #f28b9b; */
+
+body {
+    font-family: myFirstFont;
+    margin: 0
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /*  background: rgb(242, 139, 155); */
+    padding: 20px;
+    padding-bottom: 0;
+    position:sticky
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+nav a {
+    all: unset;
+    cursor: pointer;
+}
+main {
+    padding: 40px 300px;
+}
+
+
+
+h1 {
+    color: #9dc3e6;
+}
+
+h1, h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #efc389; }
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+#work-link-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+.works-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: ceneter;
+    align-items: center;
+    background-color: #efc389;
+    border-radius: 10px;
+    list-style: none;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+}
+
+.works-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text-card {
+    all: unset;
+    cursor: pointer;
+    line-height: 2rem;
+    padding-top: 20px;
+}
+
+th {
+    font-weight: bold;
+    border-color: #efc389;
+    border-radius: 5px;
+}
+tr {
+    padding-top: 10px; 
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 10vw);
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    border-radius: 5px;
+}
