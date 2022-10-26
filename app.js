@@ -1,10 +1,19 @@
 const express = require("express")
+const hbs = require("hbs")
 
 const app = express()
+
+app.set("views", __dirname + "/views")
+app.set("view engine", "hbs")
+
+
 app.use(express.static("public"))
 
-app.get("/", (request, response, next) => {
-    response.sendFile( __dirname + "/views/Home.html")
+app.get("/", (request, response) => {
+    const person = {
+        namePerson : "bethany.hamilton"
+    }
+    response.render("Home",person)
 })
 
 app.get("/about", (request, response, next) => {
